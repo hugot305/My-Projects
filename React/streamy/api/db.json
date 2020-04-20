@@ -1,0 +1,35 @@
+{
+  "streams": [
+    {
+      "title": "my title",
+      "description": "my description",
+      "id": 1
+    },
+    {
+      "title": "my title",
+      "description": "my description",
+      "id": 2
+    },
+    {
+      "title": "A new streams",
+      "description": "A new description ",
+      "id": 3
+    },
+    {
+      "title": "I created new stream",
+      "description": "This is about refactoring",
+      "id": 4
+    },
+    {
+      "title": "Streaming component reuse",
+      "description": "How to reuse components new",
+      "id": 7
+    },
+    {
+      "title": "My new stream",
+      "description": "new streams",
+      "userId": "114228546714942130770",
+      "id": 8
+    }
+  ]
+}
