@@ -3,68 +3,46 @@ package main
 import (
 	"fmt"
 	"image/color"
-	"log"
-
 	"gocv.io/x/gocv"
+	"log"
 )
 
 func main() {
+
 	webcam, err := gocv.VideoCaptureDevice(0)
 
 	if err != nil {
-		fmt.Printf("error opening video capture device: %v\n", deviceID)
-		return
+		log.Fatalf("error opening web cam: %v", err)
+		fmt.Printf("error opening video capture device: %v\n", webcam)
 	}
 	defer webcam.Close()
 
-	// open display window
-	window := gocv.NewWindow("Face Detect")
-	defer window.Close()
-
-	// prepare image matrix
 	img := gocv.NewMat()
 	defer img.Close()
 
-	// color for the rect when faces detected
-	blue := color.RGBA{0, 0, 255, 0}
+	window := gocv.NewWindow("webcamwindow")
+	defer window.Close()
 
-	// load classifier to recognize faces
+	harrcascade := "opencv_haarcascade_frontalface_default.xml"
 	classifier := gocv.NewCascadeClassifier()
+	classifier.Load(harrcascade)
 	defer classifier.Close()
 
-	if !classifier.Load(xmlFile) {
-		fmt.Printf("Error reading cascade file: %v\n", xmlFile)
-		return
-	}
-
-	fmt.Printf("Start reading device: %v\n", deviceID)
+	color := color.RGBA{0, 255, 0, 0}
 	for {
-		if ok := webcam.Read(&img); !ok {
-			fmt.Printf("Device closed: %v\n", deviceID)
-			return
-		}
-		if img.Empty() {
+		if ok := webcam.Read(&img); !ok || img.Empty() {
+			log.Println("Unable to read from the device")
 			continue
 		}
 
-		// detect faces
 		rects := classifier.DetectMultiScale(img)
-		fmt.Printf("found %d faces\n", len(rects))
-
-		// draw a rectangle around each face on the original image,
-		// along with text identifing as "Human"
 		for _, r := range rects {
-			gocv.Rectangle(&img, r, blue, 3)
-
-			size := gocv.GetTextSize("Human", gocv.FontHersheyPlain, 1.2, 2)
-			pt := image.Pt(r.Min.X+(r.Min.X/2)-(size.X/2), r.Min.Y-2)
-			gocv.PutText(&img, "Human", pt, gocv.FontHersheyPlain, 1.2, blue, 2)
+			fmt.Println("detected", r)
+			gocv.Rectangle(&img, r, color, 3)
 		}
 
-		// show the image in the window, and wait 1 millisecond
 		window.IMShow(img)
-		if window.WaitKey(1) >= 0 {
-			break
-		}
+		window.WaitKey(50)
 	}
+	
 }
