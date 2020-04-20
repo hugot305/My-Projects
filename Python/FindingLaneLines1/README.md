@@ -47,4 +47,4 @@ Another shortcoming could be when lanes are not properly marked on the road.
 
 A possible improvement would be to find a way to draw a line when data is missing. For example if the data from the right lane is better used this data to draw the left lane.
 
-Another potential improvement could be to deal with curves. 
+Another potential improvement could be to deal with curves.
