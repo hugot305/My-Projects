@@ -149,3 +149,5 @@ One potential shortcoming would be incorrect image calculation and display when 
 A possible improvement would be to find a way to draw a line when the data is missing.
 
 Another potential improvement could be to deal with curves and different lighting conditions.
+
+Adding others image processing for different lights conditions
