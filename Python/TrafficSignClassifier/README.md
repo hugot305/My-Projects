@@ -3,7 +3,7 @@
 ---
 The goal of this project is to train a CNN to recognize traffic signs from the German data set. This data set contains 43 different signs.
 
-This project project is divided in the follow steps:
+This project project is divided in the follow steps: 
 
 * Load the data set 
 * Explore, summarize and visualize the data set
