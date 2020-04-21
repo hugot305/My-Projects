@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-// Handler ... 
+// Handler ...
 type Handler func(*Client, interface{})
 
 var upgrader = websocket.Upgrader{

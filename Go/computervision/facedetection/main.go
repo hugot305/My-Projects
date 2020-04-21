@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"image/color"
 	"gocv.io/x/gocv"
+	"image/color"
 	"log"
 )
 
@@ -44,5 +44,5 @@ func main() {
 		window.IMShow(img)
 		window.WaitKey(50)
 	}
-	
+
 }

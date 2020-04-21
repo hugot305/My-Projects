@@ -1,9 +1,9 @@
 package main
 
 import (
-	"time"
 	r "github.com/dancannon/gorethink"
 	"github.com/mitchellh/mapstructure"
+	"time"
 )
 
 const (
