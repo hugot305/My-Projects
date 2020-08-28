@@ -93,7 +93,7 @@ def year_count(path):
         data = data.groupby('year').filter(lambda x: len(x) > 1)
         count = data['year'].value_counts()
 
-        # Select the values where the count is less than 3 (or 5 if you like)
+        # Select the values where the count is less than 2 (or 5 if you like)
         to_remove = count[count < 2].index
 
         # Keep rows where the city column is not in to_remove
