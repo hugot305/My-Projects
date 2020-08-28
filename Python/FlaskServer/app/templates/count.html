@@ -6,9 +6,16 @@
 
 {% block content %}
             <table class="table table-sm table-striped table-hover">
-                {% for items in result: %}
+                <thead>
+                <tr>
+                    <th scope="col">Year</th>
+                    <th scope="col">Count</th>
+                </tr>
+                </thead>
+                {% for year, count in result.iteritems(): %}
                     <tr>
-                        <th scope="col">{{ items }}</th>
+                        <td scope="col">{{ year }}</td>
+                        <td scope="col">{{ count }}</td>
                     </tr>
                 {% endfor %}
             </table>

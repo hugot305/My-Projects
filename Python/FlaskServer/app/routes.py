@@ -101,6 +101,6 @@ def year_count(path):
 
         count = data['year'].value_counts()
 
-        return render_template('count.html', result=count.iteritems(), records=len(count.index))
+        return render_template('count.html', result=count, records=len(count.index))
     except Exception as e:
         return render_template('error.html', exception=e)
