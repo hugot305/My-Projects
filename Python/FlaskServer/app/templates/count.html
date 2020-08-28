@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Number of people with the same year in the “date” field - {{records}} records{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+            <table class="table table-sm table-striped table-hover">
+                {% for items in result: %}
+                    <tr>
+                        <th scope="col">{{ items }}</th>
+                    </tr>
+                {% endfor %}
+            </table>
+{% endblock %}
