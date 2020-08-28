@@ -1,10 +1,10 @@
-# **Flask Server** 
+# **CSV Web Application** 
 
 ---
 
-**Flask Server**
+**CSV Web Application**
 
-In this project my goal was to write a small web server that will alow the user to upload, download and view csv files from a web interface. This project has been tested on Windows 10 and Linux Ubuntu.
+In this project my goal was to write a small web application that will allow the user to upload, download and view csv files. This project has been tested on Windows 10 and Linux Ubuntu.
 
 ---
 ### Dependencies
