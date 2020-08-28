@@ -37,11 +37,11 @@ When using the local development server, you may get a connection reset error in
 ### Requirements
 
 The application should have the ability to:
-• Upload a CSV file
-• List uploaded CSV files
-• Download the previously uploaded CSV file
-• Display the CSV content showing at least all column headers and content
-• Provide statistics on the number of people with the same year in the “date” field.
+- Upload a CSV file
+- List uploaded CSV files
+- Download the previously uploaded CSV file
+- Display the CSV content showing at least all column headers and content
+- Provide statistics on the number of people with the same year in the “date” field.
 
 #### Uploading files
 ![alternate text](images/upload.png "Uploading file")
