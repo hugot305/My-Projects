@@ -38,7 +38,7 @@ def upload_file():
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
                 return redirect(url_for('list_files'))
     except Exception as e:
-        return str(e)
+        return render_template('error.html', exception=e)
 
     return render_template('upload.html')
 
@@ -60,7 +60,7 @@ def download_file(path):
     try:
         return send_file(os.path.join("..//" + app.config['UPLOAD_FOLDER'], path), as_attachment=True)
     except Exception as e:
-        return str(e)
+        return render_template('error.html', exception=e)
 
 
 @app.route("/files/view/<path:path>/<int:page>")
@@ -81,7 +81,7 @@ def view_file(path, page):
         return render_template('view.html', result=rows, file=path, current_page=page, previous_page=previous_page,
                                next_page=next_page, last_page=last_page, total_records=len(data.index))
     except Exception as e:
-        return str(e)
+        return render_template('error.html', exception=e)
 
 
 @app.route("/files/count/<path:path>")
@@ -103,4 +103,4 @@ def year_count(path):
 
         return render_template('count.html', result=count.iteritems(), records=len(count.index))
     except Exception as e:
-        return str(e)
+        return render_template('error.html', exception=e)
