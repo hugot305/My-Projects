@@ -8,10 +8,7 @@ In this project my goal was to write a small web server that will alow the user 
 
 ---
 ### Dependencies
-The only special libraries used in this project are:
-	• Flask
-	• Flask-Bootstrap
-	• Pandas
+The only special libraries used in this project are: Flask,  Flask-Bootstrap and Pandas.
 
 You can install the dependencies like this:
 ```
