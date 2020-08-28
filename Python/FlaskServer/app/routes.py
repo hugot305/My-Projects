@@ -58,7 +58,7 @@ def list_files():
 def download_file(path):
     """Download a file."""
     try:
-        return send_file(os.path.join("..\\" + app.config['UPLOAD_FOLDER'], path), as_attachment=True)
+        return send_file(os.path.join("..//" + app.config['UPLOAD_FOLDER'], path), as_attachment=True)
     except Exception as e:
         return str(e)
 
