@@ -6,6 +6,6 @@ app = Flask(__name__)
 bootstrap = Bootstrap(app)
 app.run(debug=True)
 app.config['UPLOAD_FOLDER'] = "uploads"
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 
 from app import routes
