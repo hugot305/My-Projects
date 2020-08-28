@@ -37,6 +37,8 @@ def upload_file():
                 filename = secure_filename(file.filename)
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
                 return redirect(url_for('list_files'))
+            else:
+                return render_template('error.html', exception="Only comma separated value - .csv files are allowed")
     except Exception as e:
         return render_template('error.html', exception=e)
 
