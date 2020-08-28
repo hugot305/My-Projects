@@ -4,7 +4,7 @@
 
 **Flask Server**
 
-In this project my goal was to write a small web server that will alow the user to upload, download and view csv files from a web interface.
+In this project my goal was to write a small web server that will alow the user to upload, download and view csv files from a web interface. This project has been tested on Windows 10 and Linux Ubuntu.
 
 ---
 ### Dependencies
@@ -13,19 +13,28 @@ The only special libraries used in this project are:
 	• Flask-Bootstrap
 	• Pandas
 
+You can install the dependencies like this:
+```
+	pip install flask
+	pip install flask-bootstrap
+	pip install pandas
+```
 ### To run the project
 For Linux:
+```
 	export FLASK_APP=server.py
 	flask run
-
+```
 For Windows:
+```
 	set FLASK_APP=server.py
 	flask run
+```
 
 ### Limits
-	The maximum file size is 10 megabytes. If a larger file is transmitted, Flask will raise a RequestEntityTooLarge exception.
+The maximum file size is 10 megabytes. If a larger file is transmitted, Flask will raise a RequestEntityTooLarge exception.
 
-	When using the local development server, you may get a connection reset error instead of a 413 response. You will get the correct status response when running the app with a production WSGI server.
+When using the local development server, you may get a connection reset error instead of a 413 response. You will get the correct status response when running the app with a production WSGI server.
 
 ---
 ### Requirements
