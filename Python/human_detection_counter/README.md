@@ -30,7 +30,4 @@ You can install the dependencies like this:
 
 ![alternate text](images/image2.png "File list")
 
-![alternate text](images/image3.png "Counting members with same year")
-
-
 
