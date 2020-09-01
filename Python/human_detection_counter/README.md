@@ -19,9 +19,9 @@ You can install the dependencies like this:
 ### To run the project
 
 ```
-	    python main.py -v ‘Path_to_video’
-		python main.py -i ‘Path_to-image’
-		python main.py -c true
+    python main.py -v ‘Path_to_video’
+    python main.py -i ‘Path_to-image’
+    python main.py -c true
 ```
 
 ## Output
