@@ -36,7 +36,7 @@ A sample of this dataset is included with the accompanying git repo and the full
 ### Predicting a sound
 
 ```
-filename = 'audio/dog_bark/207124.wav'
+filename = 'audio/207124.wav'
 print_prediction_mfcc(filename)
 
 The predicted class is: dog_bark 
