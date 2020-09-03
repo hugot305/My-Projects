@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Uploaded files{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+      <table class="table table-sm table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="col-6">File</th>
+              <th scope="col" class="col-2"></th>
+              <th scope="col" class="col-2"></th>
+              <th scope="col" class="col-2"></th>
+            </tr>
+          </thead>
+          <tbody>
+             {% for file in result %}
+                <tr>
+                    <td class="col-6"> {{ file }} </td>
+                    <td class="col-2">
+                        <a href="/files/count/{{file}}" style="display: block;">Count</a>
+                    </td>
+                    <td class="col-2">
+                        <a href="/files/view/{{file}}/0" style="display: block;">View</a>
+                    </td>
+                    <td class="col-2">
+                        <a href="/files/download/{{file}}" style="display: block;">Download</a>
+                    </td>
+                </tr>
+             {% endfor %}
+          </tbody>
+      </table>
+{% endblock %}
+

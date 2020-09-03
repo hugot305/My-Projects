@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+    {% block header %}
+    <br>
+    <row>
+        <div class="alert alert-danger" role="alert" align="center">
+            <h4 class="alert-heading">{% block title %}Opps!... Something wrong happened{% endblock %}</h4>
+            <hr>
+            <p>
+                <strong>Error message:</strong> {{exception}}
+            </p>
+        </div>
+    </row>
+
+    {% endblock %}
+

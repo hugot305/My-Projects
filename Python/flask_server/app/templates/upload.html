@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+
+{% block header %}
+    <br>
+    <h1>{% block title %}Upload new file{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<!--    <form method=post enctype=multipart/form-data>-->
+<!--        <br>-->
+<!--            <div class="custom-file col-sm-4">-->
+<!--                <input type="file" class="custom-file-input" id="customFile">-->
+<!--                <label class="custom-file-label" for="customFile">Choose file</label>-->
+<!--            </div>-->
+<!--            <div class="col-sm-4">-->
+<!--                <input type=submit class="btn btn-primary" value=Upload>-->
+<!--            </div>-->
+<!--    </form>-->
+<br>
+<form method=post enctype=multipart/form-data>
+    <input type = "file" name = "file" />
+    <input type = "submit" value="Upload" />
+</form>
+{% endblock %}
