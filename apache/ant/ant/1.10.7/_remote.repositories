@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 09:23:46 EST 2020
+ant-1.10.7.jar>central=
+ant-1.10.7.pom>central=
+ant-1.10.7-sources.jar>central=
