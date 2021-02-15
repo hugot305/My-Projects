@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 09:23:42 EST 2020
+codemodel-2.3.2.jar>central=
+codemodel-2.3.2-sources.jar>central=
+codemodel-2.3.2.pom>central=

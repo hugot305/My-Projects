@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 09:22:56 EST 2020
+jacorb-omgapi-3.9-sources.jar>central=
+jacorb-omgapi-3.9.jar>central=
+jacorb-omgapi-3.9.pom>central=

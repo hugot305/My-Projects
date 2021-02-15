@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 12 12:39:20 EST 2020
+jsr311-api-1.1.1.jar>central=
+jsr311-api-1.1.1-sources.jar>central=
+jsr311-api-1.1.1.pom>central=
