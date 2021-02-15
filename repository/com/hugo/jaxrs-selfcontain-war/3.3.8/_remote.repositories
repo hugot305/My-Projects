@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Dec 11 13:59:43 EST 2020
+jaxrs-selfcontain-war-3.3.8.war>=
+jaxrs-selfcontain-war-3.3.8.pom>=

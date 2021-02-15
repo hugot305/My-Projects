@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 09:22:47 EST 2020
+cxf-rt-transports-http-3.3.8.jar>central=
+cxf-rt-transports-http-3.3.8.pom>central=
+cxf-rt-transports-http-3.3.8-sources.jar>central=

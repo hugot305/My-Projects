@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 09:23:12 EST 2020
+jakarta.ws.rs-api-2.1.5.jar>central=
+jakarta.ws.rs-api-2.1.5.pom>central=
+jakarta.ws.rs-api-2.1.5-sources.jar>central=
