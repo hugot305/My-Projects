@@ -1,5 +1,4 @@
 import './SearchBar.css';
-import ImageUpload from './ImageUpload';
 import { useState } from 'react';
 
 function SearchBar({ onSubmit }) {
@@ -18,11 +17,8 @@ function SearchBar({ onSubmit }) {
   return (
     <div className="search-bar">
       <form onSubmit={handleFormSubmit}>
-        <div className='row'>
-          <div className='col-md-3'>
-            <input value={term} placeholder="Search Images..." onChange={handleChange} />
-          </div>
-        </div>
+        <label>Enter Search Term</label>
+        <input value={term} onChange={handleChange} />
       </form>
     </div>
   );
